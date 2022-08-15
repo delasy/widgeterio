@@ -1,0 +1,114 @@
+html, body {
+  overscroll-behavior-x: none;
+}
+
+.widgeterio[data-widgeterio] {
+  background: #F7F7F7;
+  border: 1px solid #DADADA;
+  border-radius: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  height: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.widgeterio__surface[data-widgeterio] {
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.surface__canvas[data-widgeterio] {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+  column-gap: 100px;
+  position: absolute;
+  transform-origin: top left;
+  left: 0;
+  top: 0;
+}
+
+.surface__frame[data-widgeterio] {
+  pointer-events: none;
+}
+
+.surface__frame--selected[data-widgeterio] {
+  outline: 2px solid #0055CC;
+}
+
+.surface__element[data-widgeterio] {
+  pointer-events: none;
+}
+
+.widgeterio__left-panel[data-widgeterio] {
+  background: #FFFFFF;
+  border-right: 1px solid #DADADA;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 220px;
+  z-index: 2;
+}
+
+.left-panel__header[data-widgeterio] {
+  padding: 8px 10px;
+}
+
+.left-panel__headline[data-widgeterio] {
+  color: #444444;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+}
+
+.left-panel__body[data-widgeterio] {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  gap: 8px;
+  justify-content: flex-start;
+  padding: 0 10px;
+}
+
+.left-panel__element[data-widgeterio] {
+  appearance: none;
+  background: transparent;
+  border: 1px solid #DADADA;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  padding: 10px 0;
+  position: relative;
+  user-select: none;
+  width: calc(50% - 4px);
+}
+
+.widgeterio__right-panel[data-widgeterio] {
+  background: #FFFFFF;
+  border-left: 1px solid #DADADA;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 220px;
+  z-index: 2;
+}
